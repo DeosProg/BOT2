@@ -103,7 +103,7 @@ def text_handler(message):
     print('\033[2;35;40m '+ str(a) +' '+str(message.text)+' '+ message.from_user.first_name)
     if len(message.text) == 4:
         try:
-            path = '/home/deos/BOT/ID'
+            path = '/root/BOT2/ID'
             filelist = []
             for root, dirs, files in os.walk(path):
                 for file in files:
@@ -186,7 +186,7 @@ def text_handler(message):
             text = text.replace(codeB, '')
             print('\033[2;32;40m', str(a), ' [LOG]', message.from_user.id, '/', message.from_user.first_name, ' ',
                               'отправил BOT сообщение:',text)
-            path = '/home/deos/BOT/ID'
+            path = '/root/BOT2/ID'
             filelist = []
             for root, dirs, files in os.walk(path):
                 for file in files:
