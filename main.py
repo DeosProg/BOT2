@@ -198,7 +198,6 @@ def text_handler(message):
                         line = f.readlines()
                         user = line[2]
                         bot.send_message(user, texts.messagecB.format(messb=text,dt=str(a)), parse_mode='Markdown')
-                        bot.send_message(user, texts.messagecC, parse_mode='Markdown')
                         print('send')
         except Exception as exc:
                 print(exc)
