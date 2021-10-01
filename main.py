@@ -404,9 +404,8 @@ def callback(call):
 if __name__ == '__main__':
     print(texxt)
     print(datetime.datetime.now())
-
-    try:
-        bot.polling()
-    except Exception as exc:
-        print(exc)
-        traceback.print_exc()
+    while(True):
+        try:
+            bot.infinity_polling()
+        except:
+            pass
