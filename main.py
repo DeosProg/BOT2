@@ -5,6 +5,7 @@ import traceback
 from telebot import types
 import datetime
 from datetime import date
+import time
 
 # мои зависимости
 import timetable_processing
@@ -407,5 +408,7 @@ if __name__ == '__main__':
     while(True):
         try:
             bot.infinity_polling()
-        except:
-            pass
+        except Exception as e:
+            time.sleep(3)
+            print(e)
+            
