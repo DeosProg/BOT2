@@ -367,7 +367,7 @@ def callback(call):
                 try:
                     if pairs[5] == 'Авиамоторная':
                         place = 'на Авиамоторной'
-                    elif pairs[5] == 'дома':
+                    elif pairs[5] == 'D':
                         place = 'дистанте'
                     else:
                         place = 'на Октябрьском поле'
@@ -386,6 +386,8 @@ def callback(call):
                 try:
                     if pairs[5] == 'Авиамоторная':
                         place = 'на Авиамоторной'
+                    elif pairs[5] == 'D':
+                        place = 'дистанте'
                     else:
                         place = 'на Октябрьском поле'
                 except:
