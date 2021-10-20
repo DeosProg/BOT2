@@ -411,6 +411,6 @@ if __name__ == '__main__':
         try:
             bot.infinity_polling()
         except Exception as e:
-            time.sleep(3)
+            time.sleep(1)
             print(e)
             
