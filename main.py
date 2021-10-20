@@ -407,10 +407,13 @@ def callback(call):
 if __name__ == '__main__':
     print(texxt)
     print(datetime.datetime.now())
+    bot.infinity_polling()
+    '''
     while(True):
         try:
             bot.infinity_polling()
         except Exception as e:
             time.sleep(1)
             print(e)
+    '''
             
