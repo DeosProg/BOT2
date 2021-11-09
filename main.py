@@ -1,4 +1,4 @@
-# сторонние зависимости
+
 import telebot
 import os
 import traceback
