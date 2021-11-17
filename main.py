@@ -203,8 +203,8 @@ def text_handler(message):
                               bot.send_message(user, texts.messageB.format(messb=text,dt=str(a)), parse_mode='Markdown')
                               print('send')
                         except Exception as exc:
-                        print(exc)
-                        traceback.print_exc()
+                              print(exc)
+                              traceback.print_exc()
         except Exception as exc:
                 print(exc)
                 traceback.print_exc()
