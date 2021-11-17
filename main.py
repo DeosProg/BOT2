@@ -199,8 +199,12 @@ def text_handler(message):
                     with open(path + '/' + str(i), 'r+') as f:
                         line = f.readlines()
                         user = line[2]
-                        bot.send_message(user, texts.messageB.format(messb=text,dt=str(a)), parse_mode='Markdown')
-                        print('send')
+                        try:
+                              bot.send_message(user, texts.messageB.format(messb=text,dt=str(a)), parse_mode='Markdown')
+                              print('send')
+                        except Exception as exc:
+                        print(exc)
+                        traceback.print_exc()
         except Exception as exc:
                 print(exc)
                 traceback.print_exc()
