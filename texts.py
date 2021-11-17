@@ -67,6 +67,9 @@ urls = '''
 --------------------------------------------------------------
 Материалы по инфе: https://disk.yandex.ru/d/pDS_6P4Zed0bGg
 Материалы по матеше: https://disk.yandex.ru/d/_o7faREtC5bvWQ
+Четвертая лаба по физике: https://disk.yandex.ru/i/YHVo9svLGAzcNg
+Варианты четвертой лабы: https://disk.yandex.ru/i/Es2PK_y7BfuTIA
+Пример выполенния четвертой лабы: https://disk.yandex.ru/i/w4KKDAr74WYBtA
 Office 2010: https://disk.yandex.ru/d/f2dI1oCEOGnLRw
 Visio 2010: https://disk.yandex.ru/d/zYZiDNLQU6en_w
 VS 2010: https://disk.yandex.ru/d/suHfmI6iktVShA
