@@ -379,7 +379,7 @@ def callback(call):
                         place = 'на Октябрьском поле'
                 except:
                     place = 'нигде'
-                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.timetables_text.format(day=day + month,place=place,pair1=pairs[0],pair2=pairs[1],pair3=pairs[2],pair4=pairs[3],pair5=pairs[4],nn="Текущая неделя - "+str(nn+1), parse_mode="Markdown"))
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.timetables_text.format(day=day + month,place=place,pair1=pairs[0],pair2=pairs[1],pair3=pairs[2],pair4=pairs[3],pair5=pairs[4],nn="\nТекущая неделя - "+str(nn+1), parse_mode="Markdown"))
             except Exception as exc:
                 print(exc)
                 traceback.print_exc()
