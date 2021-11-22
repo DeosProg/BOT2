@@ -415,7 +415,6 @@ def callback(call):
 
 if __name__ == '__main__':
     print(texxt)
-    print(datetime.datetime.now())
     bot.infinity_polling()
     '''
     while(True):
