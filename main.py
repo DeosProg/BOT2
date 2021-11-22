@@ -4,7 +4,7 @@ import os
 import traceback
 from telebot import types
 import datetime
-from datetime import date
+from datetime import *
 import time
 
 # мои зависимости
