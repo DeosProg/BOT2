@@ -364,6 +364,8 @@ def callback(call):
         #РАСПИСАНИЕ-------------------------------------------------------------
         elif call.data == 'today':
             try:
+                today = datetime.today()
+                nn = int(today.strftime("%U")) - 35
                 c_date = date.today()
                 day = str(c_date.day) + ' '
                 month = months[int(c_date.month)]
@@ -377,7 +379,7 @@ def callback(call):
                         place = 'на Октябрьском поле'
                 except:
                     place = 'нигде'
-                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.timetables_text.format(day=day + month,place=place,pair1=pairs[0],pair2=pairs[1],pair3=pairs[2],pair4=pairs[3],pair5=pairs[4], parse_mode="Markdown"))
+                bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.timetables_text.format(day=day + month,place=place,pair1=pairs[0],pair2=pairs[1],pair3=pairs[2],pair4=pairs[3],pair5=pairs[4],nn="Текущая неделя"+str(nn) parse_mode="Markdown"))
             except Exception as exc:
                 print(exc)
                 traceback.print_exc()
@@ -405,6 +407,7 @@ def callback(call):
                                      pair3=pairs[2],
                                      pair4=pairs[3],
                                      pair5=pairs[4],
+                                     nn = " ",
                                      parse_mode="Markdown"))
             except Exception as exc:
                 print(exc)
