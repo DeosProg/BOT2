@@ -100,7 +100,7 @@ def text_handler(message):
 
     markup3.add(item5, item6, item7)
     markup3.add(item8, item9, item10)
-    a = datetime.datetime.today().strftime("%d.%m %H:%M")
+    a = datetime.now().strftime("%d.%m %H:%M")
     print('\033[2;35;40m '+ str(a) +' '+str(message.text)+' '+ message.from_user.first_name)
     if len(message.text) == 4:
         try:
