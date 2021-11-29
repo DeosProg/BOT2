@@ -61,7 +61,7 @@ def text_handler(message):
     markupdynamic = types.InlineKeyboardMarkup(row_width=6)
     button_5 = types.KeyboardButton(text="Главная страница✨")
     button_6 = types.KeyboardButton(text="Полезные ссылки🔗")
-    button_7 = types.KeyboardButton(text="Домашнее задание📖")
+    button_7 = types.KeyboardButton(text="Домашнее задание📖 (никто не заполняет)")
     button_8 = types.KeyboardButton(text="Расписание⏲")
 
     item = types.InlineKeyboardButton('Текущая', callback_data='0')
@@ -159,7 +159,7 @@ def text_handler(message):
 #ОТПРАВКА СООБЩЕНИЙ-------------------------------------------------------------
     if codeA in message.text:
         try:
-            a = datetime.datetime.today().strftime("%d.%m %H:%M")
+            a = datetime.today().strftime("%d.%m %H:%M")
             text = str(message.text)
             text = text.replace(codeA, '')
             print('\033[2;32;40m',str(a), ' [LOG]', message.from_user.id, '/', message.from_user.first_name, ' ',
@@ -183,7 +183,7 @@ def text_handler(message):
             
     if codeB in message.text:
         try:
-            a = datetime.datetime.today().strftime("%d.%m %H:%M")
+            a = datetime.today().strftime("%d.%m %H:%M")
             text = str(message.text)
             text = text.replace(codeB, '')
             print('\033[2;32;40m', str(a), ' [LOG]', message.from_user.id, '/', message.from_user.first_name, ' ',
