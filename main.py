@@ -42,7 +42,7 @@ def start(message):
 @bot.message_handler(commands=['update'])
 def update(message):
     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    button = types.KeyboardButton(text="Главная страница✨")
+    button = types.KeyboardButton(text="Главная страница🎄")
     keyboard.add(button)
     bot.send_message(message.chat.id, texts.update,reply_markup=keyboard)
     print('\033[2;35;40m '+str(message.text)+' '+ message.from_user.first_name)
@@ -59,10 +59,10 @@ def text_handler(message):
     markup2 = types.InlineKeyboardMarkup(row_width=2)
     markup3 = types.InlineKeyboardMarkup(row_width=7)
     markupdynamic = types.InlineKeyboardMarkup(row_width=6)
-    button_5 = types.KeyboardButton(text="Главная страница✨")
-    button_6 = types.KeyboardButton(text="Полезные ссылки🔗")
-    button_7 = types.KeyboardButton(text="Домашнее задание📖 (никто не заполняет)")
-    button_8 = types.KeyboardButton(text="Расписание⏲")
+    button_5 = types.KeyboardButton(text="Главная страница🎄")
+    button_6 = types.KeyboardButton(text="Полезные ссылки❄️")
+    button_7 = types.KeyboardButton(text="Домашнее задание🎁 (никто не заполняет)")
+    button_8 = types.KeyboardButton(text="Расписание☃️")
 
     item = types.InlineKeyboardButton('Текущая', callback_data='0')
     item2 = types.InlineKeyboardButton('Следующая', callback_data='1')
@@ -147,7 +147,7 @@ def text_handler(message):
                 bot.send_message(message.chat.id, texts.fl, )
     if "Домашнее задание" in message.text:
         bot.send_message(message.chat.id,'На какую неделю хотите узнать домашнее задание?',reply_markup=markup)
-    if "Расписание⏲" in message.text:
+    if "Расписание" in message.text:
         bot.send_message(message.chat.id,'На какой день вы хотите узнать расписание?',reply_markup=markup2)
     if 'Главная страница' in message.text:
         try:
