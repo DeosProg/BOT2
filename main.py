@@ -208,7 +208,7 @@ def text_handler(message):
         except Exception as exc:
                 print(exc)
                 traceback.print_exc()
-    if "Полезные ссылки🔗" in message.text:
+    if "Полезные ссылки" in message.text:
         bot.send_message(message.chat.id,texts.urls,reply_markup=keyboard2)
 
 #ОБРАБОТКА INLINE КНОПОК--------------------------------------------------------
