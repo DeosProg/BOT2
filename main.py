@@ -164,7 +164,7 @@ def text_handler(message):
             text = text.replace(codeA, '')
             print('\033[2;32;40m',str(a), ' [LOG]', message.from_user.id, '/', message.from_user.first_name, ' ',
                               'отправил admin сообщение:',text)
-            path = '/root/BOT2/ph.jpgID'
+            path = '/root/BOT2/ID'
             filelist = []
             for root, dirs, files in os.walk(path):
                 for file in files:
@@ -260,7 +260,7 @@ def callback(call):
                 lst = homework0.Mo
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
                 print(lst)
             except Exception as exc:
                 traceback.print_exc()
@@ -271,7 +271,7 @@ def callback(call):
                 print(homework0.Tu)
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
             except Exception as exc:
                 traceback.print_exc()
         elif call.data == '03':
@@ -279,7 +279,7 @@ def callback(call):
                 lst = homework0.We
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
             except Exception as exc:
                 traceback.print_exc()
         elif call.data == '04':
@@ -287,7 +287,7 @@ def callback(call):
                 lst = homework0.Th
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
             except Exception as exc:
                 traceback.print_exc()
         elif call.data == '05':
@@ -295,7 +295,7 @@ def callback(call):
                 lst = homework0.Fr
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
             except Exception as exc:
                 traceback.print_exc()
         elif call.data == '06':
@@ -303,7 +303,7 @@ def callback(call):
                 lst = homework0.Sa
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
             except Exception as exc:
                 traceback.print_exc()
         elif call.data == '11':
@@ -311,7 +311,7 @@ def callback(call):
                 lst = homework1.Mo
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
                 print(lst)
             except Exception as exc:
                 traceback.print_exc()
@@ -320,7 +320,7 @@ def callback(call):
                 lst = homework1.Tu
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
                 print(lst)
             except Exception as exc:
                 traceback.print_exc()
@@ -329,7 +329,7 @@ def callback(call):
                 lst = homework1.We
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
                 print(lst)
             except Exception as exc:
                 traceback.print_exc()
@@ -338,7 +338,7 @@ def callback(call):
                 lst = homework1.Th
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
                 print(lst)
             except Exception as exc:
                 traceback.print_exc()
@@ -347,7 +347,7 @@ def callback(call):
                 lst = homework1.Fr
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
                 print(lst)
             except Exception as exc:
                 traceback.print_exc()
@@ -356,7 +356,7 @@ def callback(call):
                 lst = homework1.Sa
                 hw, urls=processing(lst)
                 bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.id,text=texts.homework.format(a=hw[0],b=hw[1],c=hw[2],d=hw[3],e=hw[4]),reply_markup=markupdynamic)
-                bot.send_document(call.message.chat.id,open(r'/root/BOT2/ph.jpg'+urls[0], 'rb'))
+                bot.send_document(call.message.chat.id,open(r'/root/BOT2/'+urls[0], 'rb'))
                 print(lst)
             except Exception as exc:
                 traceback.print_exc()
