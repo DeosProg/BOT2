@@ -61,7 +61,7 @@ def text_handler(message):
     markupdynamic = types.InlineKeyboardMarkup(row_width=6)
     button_5 = types.KeyboardButton(text="Главная страница🎄")
     button_6 = types.KeyboardButton(text="Полезные ссылки❄️")
-    button_7 = types.KeyboardButton(text="Домашнее задание🎁 (никто не заполняет)")
+    button_7 = types.KeyboardButton(text="Домашнее задание🎁")
     button_8 = types.KeyboardButton(text="Расписание☃️")
 
     item = types.InlineKeyboardButton('Текущая', callback_data='0')
@@ -69,6 +69,7 @@ def text_handler(message):
 
     item3 = types.InlineKeyboardButton('Сегодня', callback_data='today')
     item4 = types.InlineKeyboardButton('Завтра', callback_data='tomorrow')
+    item34 = types.InlineKeyboardButton('На неделю', callback_data='default')
 
     item5 = types.InlineKeyboardButton('Понедельник', callback_data='01')
     item6 = types.InlineKeyboardButton('Вторник', callback_data='02')
@@ -96,7 +97,7 @@ def text_handler(message):
 
     markup.add(item,item2)
 
-    markup2.add(item3,item4)
+    markup2.add(item3,item4,item34)
 
     markup3.add(item5, item6, item7)
     markup3.add(item8, item9, item10)
@@ -226,6 +227,7 @@ def callback(call):
 
     item3 = types.InlineKeyboardButton('Сегодня', callback_data='today')
     item4 = types.InlineKeyboardButton('Завтра', callback_data='tomorrow')
+    item34 = types.InlineKeyboardButton('На неделю', callback_data='default')
 
     item5 = types.InlineKeyboardButton('Понедельник', callback_data='01')
     item6 = types.InlineKeyboardButton('Вторник', callback_data='02')
@@ -239,10 +241,9 @@ def callback(call):
     item14 = types.InlineKeyboardButton('Четверг', callback_data='14')
     item15 = types.InlineKeyboardButton('Пятница', callback_data='15')
     item16 = types.InlineKeyboardButton('Суббота', callback_data='16')
+          
     markup.add(item,item2)
-
-    markup2.add(item3,item4)
-
+    markup2.add(item3,item4,item34)
     markup3.add(item5, item6, item7)
     markup3.add(item8, item9, item10)
     markup31.add(item11, item12, item13)
