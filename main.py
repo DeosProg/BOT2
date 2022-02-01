@@ -450,7 +450,7 @@ def callback(call):
         elif call.data == 'default':
             try:
                 week_number = timetable_processing.get_week_num
-                if week_number%2 == 0:
+                if week_number == 2:
                     img = open('0.png', 'rb')
                     bot.send_photo(chat_id=call.message.chat.id, photo=img)
                 else:
