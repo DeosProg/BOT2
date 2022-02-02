@@ -452,7 +452,7 @@ def callback(call):
                 week_number = timetable_processing.get_week_num
                 if week_number == 2:
                     bot.send_photo(chat_id=call.message.chat.id, photo=open('0.png', 'rb'))
-                    bot.send_message(message.chat.id,"Цветовые обозначения:")
+                    bot.send_message(call.message.chat.id,"Цветовые обозначения:")
                     bot.send_message(message.chat.id, "Лекции - 🟢")
                     bot.send_message(message.chat.id, "Практика - 🟠")
                     bot.send_message(message.chat.id, "Лабораторные - 🟣")
@@ -460,7 +460,7 @@ def callback(call):
                     
                 else:
                     bot.send_photo(chat_id=call.message.chat.id, photo=open('1.png', 'rb'))
-                    bot.send_message(message.chat.id,"Цветовые обозначения:")
+                    bot.send_message(call.message.chat.id,"Цветовые обозначения:")
                     bot.send_message(message.chat.id, "Лекции - 🟢")
                     bot.send_message(message.chat.id, "Практика - 🟠")
                     bot.send_message(message.chat.id, "Лабораторные - 🟣")
