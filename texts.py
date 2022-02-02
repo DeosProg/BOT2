@@ -65,12 +65,9 @@ messageB = '''
 urls = '''
 🔗Полезные ссылки🔗
 --------------------------------------------------------------
-Материалы по матеше: https://disk.yandex.ru/d/_o7faREtC5bvWQ
-Office 2010: https://disk.yandex.ru/d/f2dI1oCEOGnLRw
-Visio 2010: https://disk.yandex.ru/d/zYZiDNLQU6en_w
-VS 2010: https://disk.yandex.ru/d/suHfmI6iktVShA
-VS 2019: https://visualstudio.microsoft.com/ru/vs/
-KMS(активатор): https://disk.yandex.ru/d/Rx_fLhF1XA5oyA
+Физика: https://disk.yandex.ru/d/g1JX7UEBjH0jog
+ТОЭ: https://disk.yandex.ru/d/jgv5G5N6KUndig
+Инженерная графика: https://disk.yandex.ru/d/CedhUuNnLyyN9g 
 '''
 update = '''
 -Расписание обновлено на актуальное.
