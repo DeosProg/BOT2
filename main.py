@@ -453,17 +453,17 @@ def callback(call):
                 if week_number == 2:
                     bot.send_photo(chat_id=call.message.chat.id, photo=open('0.png', 'rb'))
                     bot.send_message(call.message.chat.id,"Цветовые обозначения:")
-                    bot.send_message(message.chat.id, "Лекции - 🟢")
-                    bot.send_message(message.chat.id, "Практика - 🟠")
-                    bot.send_message(message.chat.id, "Лабораторные - 🟣")
+                    bot.send_message(call.message.chat.id, "Лекции - 🟢")
+                    bot.send_message(call.message.chat.id, "Практика - 🟠")
+                    bot.send_message(call.message.chat.id, "Лабораторные - 🟣")
                                      
                     
                 else:
                     bot.send_photo(chat_id=call.message.chat.id, photo=open('1.png', 'rb'))
                     bot.send_message(call.message.chat.id,"Цветовые обозначения:")
-                    bot.send_message(message.chat.id, "Лекции - 🟢")
-                    bot.send_message(message.chat.id, "Практика - 🟠")
-                    bot.send_message(message.chat.id, "Лабораторные - 🟣")
+                    bot.send_message(call.message.chat.id, "Лекции - 🟢")
+                    bot.send_message(call.message.chat.id, "Практика - 🟠")
+                    bot.send_message(call.message.chat.id, "Лабораторные - 🟣")
 
             except Exception as exc:
                 print(exc)
