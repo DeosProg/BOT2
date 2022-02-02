@@ -453,9 +453,20 @@ def callback(call):
                 if week_number == 2:
                     img = open('0.png', 'rb')
                     bot.send_photo(chat_id=call.message.chat.id, photo=img)
+                    bot.send_message(message.chat.id, 
+                                     "Лекции - 🟢
+Практика - 🟠
+Лабораторные - 🟣
+")
+                    
                 else:
                     img = open('1.png', 'rb')
                     bot.send_photo(chat_id=call.message.chat.id, photo=img)
+                     bot.send_message(message.chat.id, 
+                                     "Лекции - 🟢
+Практика - 🟠
+Лабораторные - 🟣
+")
 
             except Exception as exc:
                 print(exc)
