@@ -471,10 +471,10 @@ def callback(call):
                 print(exc)
                 traceback.print_exc()
            
-       elif call.data == 'default':
+        elif call.data == 'next':
             try:
                 week_number = timetable_processing.get_week_num
-                if week_number == 1:
+                if week_number == 2:
                     bot.send_photo(chat_id=call.message.chat.id, photo=open('0.png', 'rb'))
                     bot.send_message(call.message.chat.id,"Цветовые обозначения:")
                     bot.send_message(call.message.chat.id, "Лекции - 🟢")
