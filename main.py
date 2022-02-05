@@ -71,7 +71,7 @@ def text_handler(message):
     item3 = types.InlineKeyboardButton('Сегодня', callback_data='today')
     item4 = types.InlineKeyboardButton('Завтра', callback_data='tomorrow')
     item34 = types.InlineKeyboardButton('На неделю', callback_data='default')
-    item43 = types.InlineKeyboardButton('На неделю', callback_data='next')
+    item43 = types.InlineKeyboardButton('На следующую неделю', callback_data='next')
 
     item5 = types.InlineKeyboardButton('Понедельник', callback_data='01')
     item6 = types.InlineKeyboardButton('Вторник', callback_data='02')
@@ -230,7 +230,7 @@ def callback(call):
     item3 = types.InlineKeyboardButton('Сегодня', callback_data='today')
     item4 = types.InlineKeyboardButton('Завтра', callback_data='tomorrow')
     item34 = types.InlineKeyboardButton('На неделю', callback_data='default')
-    item43 = types.InlineKeyboardButton('На неделю', callback_data='next')
+    item43 = types.InlineKeyboardButton('На следующую неделю', callback_data='next')
 
     item5 = types.InlineKeyboardButton('Понедельник', callback_data='01')
     item6 = types.InlineKeyboardButton('Вторник', callback_data='02')
@@ -246,7 +246,7 @@ def callback(call):
     item16 = types.InlineKeyboardButton('Суббота', callback_data='16')
 
     markup.add(item, item2)
-    markup2.add(item3, item4, item34,item43)
+    markup2.add(item3, item4, item34, item43)
     markup3.add(item5, item6, item7)
     markup3.add(item8, item9, item10)
     markup31.add(item11, item12, item13)
