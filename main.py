@@ -71,6 +71,7 @@ def text_handler(message):
     item3 = types.InlineKeyboardButton('Сегодня', callback_data='today')
     item4 = types.InlineKeyboardButton('Завтра', callback_data='tomorrow')
     item34 = types.InlineKeyboardButton('На неделю', callback_data='default')
+    item43 = types.InlineKeyboardButton('На неделю', callback_data='next')
 
     item5 = types.InlineKeyboardButton('Понедельник', callback_data='01')
     item6 = types.InlineKeyboardButton('Вторник', callback_data='02')
@@ -98,7 +99,7 @@ def text_handler(message):
 
     markup.add(item, item2)
 
-    markup2.add(item3, item4, item34)
+    markup2.add(item3, item4, item34, item43)
 
     markup3.add(item5, item6, item7)
     markup3.add(item8, item9, item10)
@@ -229,6 +230,7 @@ def callback(call):
     item3 = types.InlineKeyboardButton('Сегодня', callback_data='today')
     item4 = types.InlineKeyboardButton('Завтра', callback_data='tomorrow')
     item34 = types.InlineKeyboardButton('На неделю', callback_data='default')
+    item43 = types.InlineKeyboardButton('На неделю', callback_data='next')
 
     item5 = types.InlineKeyboardButton('Понедельник', callback_data='01')
     item6 = types.InlineKeyboardButton('Вторник', callback_data='02')
@@ -244,7 +246,7 @@ def callback(call):
     item16 = types.InlineKeyboardButton('Суббота', callback_data='16')
 
     markup.add(item, item2)
-    markup2.add(item3, item4, item34)
+    markup2.add(item3, item4, item34,item43)
     markup3.add(item5, item6, item7)
     markup3.add(item8, item9, item10)
     markup31.add(item11, item12, item13)
@@ -451,6 +453,28 @@ def callback(call):
             try:
                 week_number = timetable_processing.get_week_num
                 if week_number == 2:
+                    bot.send_photo(chat_id=call.message.chat.id, photo=open('0.png', 'rb'))
+                    bot.send_message(call.message.chat.id,"Цветовые обозначения:")
+                    bot.send_message(call.message.chat.id, "Лекции - 🟢")
+                    bot.send_message(call.message.chat.id, "Практика - 🟠")
+                    bot.send_message(call.message.chat.id, "Лабораторные - 🟣")
+                                     
+                    
+                else:
+                    bot.send_photo(chat_id=call.message.chat.id, photo=open('1.png', 'rb'))
+                    bot.send_message(call.message.chat.id,"Цветовые обозначения:")
+                    bot.send_message(call.message.chat.id, "Лекции - 🟢")
+                    bot.send_message(call.message.chat.id, "Практика - 🟠")
+                    bot.send_message(call.message.chat.id, "Лабораторные - 🟣")
+
+            except Exception as exc:
+                print(exc)
+                traceback.print_exc()
+           
+       elif call.data == 'default':
+            try:
+                week_number = timetable_processing.get_week_num
+                if week_number == 1:
                     bot.send_photo(chat_id=call.message.chat.id, photo=open('0.png', 'rb'))
                     bot.send_message(call.message.chat.id,"Цветовые обозначения:")
                     bot.send_message(call.message.chat.id, "Лекции - 🟢")
